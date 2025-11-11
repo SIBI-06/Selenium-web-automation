@@ -1,16 +1,13 @@
-my-automation-project/
-├─ README.md
-├─ LICENSE
-├─ .gitignore
-├─ requirements.txt / pom.xml / package.json
-├─ tests/                   # test cases (selenium/pytest/TestNG)
-│  ├─ pages/                # Page Object Model classes
-│  ├─ tests/                # actual test files
-│  └─ data/                 # test data / fixtures
-├─ src/                     # src code if needed
-├─ reports/                 # sample test reports (keep small or .gitignored)
-├─ scripts/                 # helper scripts (start grid, run tests)
-├─ .github/
-│  └─ workflows/
-│     └─ ci.yml             # CI to run tests
-└─ docs/                    # extra docs, screenshots, videos
+# My Automation Project
+
+Automated tests for the sample web app using Selenium + pytest.
+
+## Quick start
+1. Install dependencies: `pip install -r requirements.txt`
+2. Start browser driver (or use webdriver-manager)
+3. Run tests: `pytest -v --html=reports/report.html`
+
+## Structure
+- `tests/pages/` - page objects
+- `tests/tests/` - test cases
+- `scripts/` - helper scripts
